@@ -763,7 +763,7 @@ header {
 
 #blog {
 	background: #FFFCF4;
-	padding: 96px 0 145px 0;
+	padding: 96px 0 140px 0;
 }
 
 #blog .blog-title {
@@ -797,7 +797,7 @@ header {
 
 #blog .card-text {
 	padding: 20px 20px 28px 20px;
-	margin-top: -6px;
+
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border-bottom-left-radius: 16px;
