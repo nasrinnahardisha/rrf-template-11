@@ -61,7 +61,7 @@ $(document).ready(function () {
   $(".blog-content").slick({
     arrows: false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 800,
     slidesToShow: 3,
@@ -88,7 +88,7 @@ $(document).ready(function () {
 
  $(document).ready(function(){
     $('.card-content').slick({
-      autoplay: false,
+      autoplay: true,
       arrows: true,  
       infinite: true,
       speed: 300,
@@ -96,7 +96,7 @@ $(document).ready(function () {
       adaptiveHeight: true,
         responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1199,
       settings: {
         slidesToShow: 2
       }
@@ -104,7 +104,8 @@ $(document).ready(function () {
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 1,
+          arrows: false,  
       }
     }
   ],

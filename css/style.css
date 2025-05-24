@@ -20,7 +20,7 @@ html {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	overflow-y: scroll;
 }
 
@@ -147,9 +147,7 @@ p {
 	transition: all 0.3s ease;
 }
 
-.header-btn:hover {
-	background: #FFFFFF;
-}
+
 
 .header-btn a {
 	color: #FFF;
@@ -323,6 +321,7 @@ header {
 }
 
 .nav__menu__btn {
+	display: none;
 	font-size: 40px;
 	cursor: pointer;
 }
@@ -1354,6 +1353,7 @@ footer .copy-right {
 	.footer-top {
 		gap: 60px;
 	}
+
 }
 
 
@@ -1363,9 +1363,7 @@ footer .copy-right {
 
 
 
-	.nav__menu__btn {
-		display: none;
-	}
+	
 }
 
 @media (max-width: 768px) {
@@ -1391,9 +1389,7 @@ footer .copy-right {
 		line-height: 52px;
 	}
 
-	.nav__links {
-		display: none;
-	}
+	
 
 	.btn {
 		display: none;
@@ -1403,7 +1399,9 @@ footer .copy-right {
 		padding-top: 0;
 		padding: 0 30px;
 	}
-
+	.nav__menu__btn {
+		display: block;
+	}
 	.nav__bar {
 		padding-left: 0;
 		padding-right: 0;
@@ -1428,6 +1426,12 @@ footer .copy-right {
 		opacity: 0;
 		visibility: hidden;
 		background: #FFFCF4;
+
+	}
+
+	.nav__links li {
+		width: 100%;
+		text-align: center;
 	}
 
 	.nav__links.open {
@@ -1440,6 +1444,7 @@ footer .copy-right {
 		position: relative;
 		padding-bottom: 8px;
 		transition: .3s;
+		text-align: center;
 	}
 
 	.hero-image img {
@@ -1539,10 +1544,9 @@ footer .copy-right {
 	}
 
 	.footer-top>div {
-		text-align: center;
 		flex: 1 1 calc((100% - 1 * 130px) / 2);
 	}
-
+/* 
 	.footer-top .social-icon {
 		display: flex;
 		align-items: center;
@@ -1560,7 +1564,7 @@ footer .copy-right {
 		bottom: -15px;
 		left: 50%;
 		transform: translateX(-50%);
-	}
+	} */
 
 	footer {
 		padding-top: 40px;
@@ -1575,6 +1579,11 @@ footer .copy-right {
 		max-width: 320px;
 		text-align: center;
 		margin: 0 auto;
+	}
+
+	#courses .card {
+		width: 100% !important;
+
 	}
 }
 
@@ -1668,10 +1677,7 @@ footer .copy-right {
 		gap: 40px;
 	}
 
-	#courses .card {
-		width: 100% !important;
 
-	}
 
 
 	.card-content .preve-arrow.slick-arrow,
