@@ -1412,7 +1412,7 @@ footer .copy-right {
 		list-style: none;
 		position: absolute;
 		top: 43px;
-		left: 0;
+		right: 0;
 		width: 100%;
 		display: flex;
 		padding-top: 2rem;
